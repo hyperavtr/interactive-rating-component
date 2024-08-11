@@ -107,10 +107,10 @@ main {
 	color: var(--light-grey);
 	font-weight: 400;
 	font-size: 13px;
-	line-height: 1.57rem;
+	line-height: 1.5rem;
 	transform: scale(0.97);
 	margin-left: -0.3rem;
-	width: 105%;
+	width: 100%;
 }
 
 /* rating form [rating content]*/
