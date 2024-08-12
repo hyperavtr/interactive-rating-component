@@ -126,10 +126,10 @@ main {
 	color: var(--light-grey);
 	font-weight: 400;
 	font-size: 13px;
-	line-height: 1.5rem;
+	line-height: 1.4rem;
 	transform: scale(0.97);
 	margin-left: -0.3rem;
-	width: 100%;
+	width: 99%;
 }
 
 /* rating form [rating content]*/
