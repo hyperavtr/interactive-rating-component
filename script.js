@@ -47,9 +47,9 @@ const submitRating = function() {
 	if (sendRating.textContent === "") {
 		alert("Please rate us!");
 	} else {
-		ratingWrapper.style.opacity = "0.7";
+		ratingWrapper.style.opacity = "0.5";
 		sandClock.style.display = "block";
-		setTimeout(vanishAppear, 600);
+		setTimeout(vanishAppear, 1000);
 	}
 }
 
