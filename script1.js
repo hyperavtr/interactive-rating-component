@@ -3,10 +3,9 @@ const rateBtns = document.querySelectorAll(".rating-btn");
 const submitBtn = document.querySelector(".submit-btn");
 const ratingWrapper = document.querySelector(".rating-wrapper");
 const postevaluationWrapper = document.querySelector(".thank-you-wrapper");
-const sandClock = document.querySelector(".sand-clock");
 
 const sendRating = document.querySelector(".send-rating");  //crutch to simulate "sending".
-const afterSelectionBtns = Array.from(rateBtns); // made array from nodelist with purpose to use array methods.
+const rateBtns = Array.from(rateBtns); // made array from nodelist with purpose to use array methods.
 
 // looped through the buttons in the nodelist to give each button a click action.
 rateBtns.forEach(btn => {
@@ -36,20 +35,16 @@ rateBtns.forEach(btn => {
 });
 
 
-
-function vanishAppear() {
-	ratingWrapper.style.display = "none"; //hide main rating section.
-	postevaluationWrapper.style.display = "flex"; //show postevaluation section.
-	sandClock.style.display = "none";
-}
 //submit if span content with class sendRating not equal to "".
 const submitRating = function() {
 	if (sendRating.textContent === "") {
 		alert("Please rate us!");
 	} else {
-		ratingWrapper.style.opacity = "0.7";
-		sandClock.style.display = "block";
-		setTimeout(vanishAppear, 600);
+		submitBtn.style.background = "var(--white)";
+		submitBtn.style.transition = "0.2s ease-out";
+
+		ratingWrapper.style.display = "none"; //hide main rating section.
+		postevaluationWrapper.style.display = "flex"; //show postevaluation section.
 	}
 }
 
