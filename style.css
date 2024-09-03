@@ -127,9 +127,9 @@ main {
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 1.4rem;
-	transform: scale(0.97);
-	margin-left: -0.3rem;
-	width: 99%;
+	/* transform: scale(0.97); */
+	/* margin-left: -0.3rem; */
+	width: 100%;
 }
 
 /* rating form [rating content]*/
@@ -144,7 +144,7 @@ main {
 
 .rating-list {
 	display: flex;
-	gap: clamp(0.05rem, 3vw, 1.3rem);
+	gap: clamp(0.05rem, 3.5vw, 1.3rem);
 	flex-wrap: wrap;
 }
 
