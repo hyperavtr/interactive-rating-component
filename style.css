@@ -144,7 +144,7 @@ main {
 
 .rating-list {
 	display: flex;
-	gap: clamp(0.3rem, 4.5vw, 1.3rem);
+	gap: clamp(0.05rem, 3vw, 1.3rem);
 	flex-wrap: wrap;
 }
 
